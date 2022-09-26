@@ -1,0 +1,2 @@
+## For compiling scss file to css
+sass --watch styles/main.scss:styles/style.css

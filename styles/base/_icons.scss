@@ -1,8 +1,9 @@
 //icons path
 $icons-path: './../fonts/icons/';
+$icon-name: 'icomoon';
 
 @font-face {
-    font-family: 'icomoon';
+    font-family: $icon-name;
     src:  url($icons-path + 'icomoon.eot?rjer7f');
     src:  url($icons-path + 'icomoon.eot?rjer7f#iefix') format('embedded-opentype'),
     url($icons-path + 'icomoon.ttf?rjer7f') format('truetype'),
@@ -15,7 +16,7 @@ $icons-path: './../fonts/icons/';
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: $icon-name !important;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -37,6 +38,12 @@ $icons-path: './../fonts/icons/';
 .icon-arrow-down:before {
     content: "\e902";
 }
+.icon-chevron-down:before {
+    content: "\e90c";
+}
+.icon-chevron-up:before {
+    content: "\e90d";
+}
 .icon-chevron-left:before {
     content: "\e903";
 }
@@ -57,4 +64,10 @@ $icons-path: './../fonts/icons/';
 }
 .icon-search:before {
     content: "\e909";
+}
+.icon-circle:before {
+    content: "\e90a";
+}
+.icon-eye:before {
+    content: "\e90b";
 }
